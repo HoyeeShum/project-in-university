@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.shy81491932.gpsclock.AddClockActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/AppTheme"
+        app:titleTextColor="@color/colorTitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/title"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTitle"
+            android:textSize="24sp"
+            android:typeface="serif"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="11dp" />
+        <Button
+            android:id="@+id/backButtom"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back"/>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/setButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape"
+        android:fontFamily="sans-serif"
+        android:text="@string/set_buttom"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.982" />
+
+    <EditText
+        android:id="@+id/setText"
+
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorTitle"
+        android:hint="  请输入距离(m)"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorText"
+        android:textCursorDrawable="@color/colorButtom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.02" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GPS clock</string>
+    <string name="title">GPS闹钟</string>
+    <string name="set_buttom">Set</string>
+    <string name="popup">设置距离</string>
+    <string name="popup_buttom">确定</string>
+    <string name="checkDis">查看距离</string>
+    <string name="dialogtit">提示</string>
+
+</resources>
